@@ -1,0 +1,109 @@
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/cascadia-code.min.css");
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, input, button, .xdebug-var-dump * {
+    font-family: 'Cascadia Code', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
+    color: #101010;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+}
+
+.lesson-header {
+    font-size: 2rem;
+}
+
+
+.container {
+    margin: 0 auto;
+    max-width: 71.25rem;
+    padding: 1.5rem;
+}
+
+.header-lesson {
+    font-size: 2.4rem;
+    text-align: center;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.lesson-title {
+    background: #000;
+    color: #fff;
+    padding: 1rem;    
+}
+
+.lesson-title span {
+    color: #666;    
+}
+
+.xdebug-var-dump, p, h1, h2, h3, h4, h5, h6, pre, article {
+    background-color: #ccc;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    border-radius: 8px 0 0 8px;
+    border-left: 8px solid #000;
+    
+}
+
+.xdebug-var-dump i, .xdebug-var-dump small {
+    font-style: italic;
+}
+
+.tag {
+    background: #666;
+    color: #fff;
+    border-radius: 4px;
+    padding: 0.2rem 0.4rem;
+    margin-left: 1rem;
+    display: inline;
+}
+
+.obs {
+    background: #17a2b8;
+    color: #fff;
+    border-radius: 4px;
+    padding: 0.4rem 0.4rem;    
+    display: block;
+}
+
+
