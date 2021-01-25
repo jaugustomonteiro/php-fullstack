@@ -69,14 +69,18 @@ header {
 .lesson-title {
     background: #000;
     color: #fff;
-    padding: 1rem;    
+    padding: 1rem;  
+    display: block;  
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
 }
 
 .lesson-title span {
-    color: #666;    
+    color: var(--red);    
 }
 
-.xdebug-var-dump, p, h1, h2, h3, h4, h5, h6, pre, article {
+.xdebug-var-dump, p, h1, h2, h3, h4, pre, article {
     background-color: #ccc;
     margin: 1.5rem 0;
     padding: 1.5rem;
@@ -104,6 +108,26 @@ header {
     border-radius: 4px;
     padding: 0.4rem 0.4rem;    
     display: block;
+}
+
+.message {
+    padding: 1rem 0.4rem;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;      
+}
+
+.message-warning {
+    border: 2px solid var(--yellow);
+    color: var(--yellow);
+    
+}
+
+.message-warning strong {
+    margin: 0 5px;
+    display: block;
+    color: var(--orange);
+    font-style: italic;
 }
 
 
