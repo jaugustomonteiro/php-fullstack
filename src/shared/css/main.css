@@ -108,13 +108,16 @@ header {
     border-radius: 4px;
     padding: 0.4rem 0.4rem;    
     display: block;
+    margin-bottom: 1rem;
 }
 
 .message {
     padding: 1rem 0.4rem;
     display: flex;
     align-items: center;
-    border-radius: 4px;      
+    border-radius: 4px;
+    margin-bottom: 1rem;   
+    font-size: .8rem;   
 }
 
 .message-warning {
@@ -128,6 +131,15 @@ header {
     display: block;
     color: var(--orange);
     font-style: italic;
+}
+
+.spantag {
+    background: #666;
+    color: #fff;
+    border-radius: 4px;
+    padding: 0.2rem 0.4rem;
+    display: inline-block;
+    margin-bottom: .5rem;
 }
 
 

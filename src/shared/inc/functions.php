@@ -5,6 +5,11 @@
 header("Content-Type: text/html; charset=utf-8");
 
 date_default_timezone_set("America/Sao_Paulo");
+/*
+ini_set("display_errors", 1);
+ini_set("error_reporting", E_ALL);
+ini_set('xdebug.overload_var_dump', 1);
+*/
 
 set_error_handler("phpError");
 
@@ -25,4 +30,8 @@ function lesson_title($title = "lesson", $line = __LINE__) {
 
 function lesson_obs($title = "tag") {
     echo "<span class='obs'>{$title}</span>";
+}
+
+function lesson_tag($title = "tag") {
+    echo "<span class='spantag'>{$title}</span>" . PHP_EOL;
 }
