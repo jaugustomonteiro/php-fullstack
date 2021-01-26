@@ -1,8 +1,9 @@
 <?php
 
-require __DIR__ . "/../header.php";
 
-heder_lesson("Manipulando Tratamentos - Funcões para String");
+require __DIR__ . "/shared/header.php";
+
+heder_lesson("Manipulação e Tratamentos <br> Manipulação de arquivos");
 
 lesson_title($title = "Tipo Variáveis", __LINE__);
 
@@ -12,4 +13,4 @@ lesson_title($title = "include include_ondce", __LINE__);
 heder_lesson("Requisição de arquivos");
 lesson_obs("bolean");
 */
-require __DIR__ .  "/../footer.php";
+require __DIR__ .  "/shared/footer.php";

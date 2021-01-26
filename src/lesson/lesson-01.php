@@ -1,8 +1,8 @@
 <?php
 
-require __DIR__ . "/../header.php";
+require __DIR__ . "/shared//header.php";
 
-heder_lesson("Manipulando Tratamentos - Funcões para String");
+heder_lesson("Manipulação e Tratamentos <br> Funcões para String");
 
 lesson_title($title = "string e multibytes", __LINE__);
 
@@ -87,4 +87,4 @@ heder_lesson("Requisição de arquivos");
 lesson_obs("bolean");
 lesson_tag('Augusto');
 */
-require __DIR__ .  "/../footer.php";
+require __DIR__ .  "/shared/footer.php";

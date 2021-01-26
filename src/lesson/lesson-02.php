@@ -1,8 +1,8 @@
 <?php
 
-require __DIR__ . "/../header.php";
+require __DIR__ . "/shared/header.php";
 
-heder_lesson("Manipulando Tratamentos - Funcões para Arrays");
+heder_lesson("Manipulação e Tratamentos <br> Funcões para Arrays");
 
 lesson_title($title = "Manipulação", __LINE__);
 
@@ -175,7 +175,7 @@ $template = <<<TPL
 <article>
     <h1>{{name}}</h1>
     <h2>{{email}}</h2>
-    <strong>{{age}}</strong>
+    <p>{{age}} Anos</p>
 </article>
 TPL;
 
@@ -193,4 +193,4 @@ lesson_title($title = "include include_ondce", __LINE__);
 heder_lesson("Requisição de arquivos");
 lesson_obs("bolean");
 */
-require __DIR__ .  "/../footer.php";
+require __DIR__ .  "/shared/footer.php";
