@@ -1,132 +1,196 @@
 <?php
 
-require "../../shared/header.php";
+require __DIR__ . "/../header.php";
 
-heder_lesson("Variáveis e tipo de dados");
+heder_lesson("Manipulando Tratamentos - Funcões para Arrays");
 
-lesson_title($title = "Tipo Variáveis", __LINE__);
+lesson_title($title = "Manipulação", __LINE__);
 
-$userFirstName = "Augusto";
-$userLastName = "Monteiro";
-echo "<h3>{$userFirstName} {$userLastName}</h3>";
+$index = [
+    "Marilene",
+    "Augusto",
+    "Flávia",
+    "Márlon",
+    "Márcio"
+];
 
-$user_first_name = $userFirstName;
-$user_last_name = $userLastName;
-echo "<h3>{$user_first_name} {$user_last_name}</h3>";
+array_unshift($index, "Junior");
+array_unshift($index, "Kaleb");
+array_push($index, "Francisco");
+array_push($index, "Maupimo");
 
-$userAge = 32;
-echo "<h3>{$user_first_name} {$user_last_name} tem <span class='tag'>{$userAge}</span> anos</h3>";
+$assoc = [
+    "as1" => "Marilene",
+    "as2" => "Augusto",
+    "as3" => "Flávia",
+    "as4" => "Márlon",
+    "as5" => "Márcio"
+];
 
-$userEmail = "<p>jamonteirolima@gmail.com</p>";
-echo $userEmail;
+$assoc = ["as6" => "Kaleb", "as7" => "Junior"] + $assoc;
+$assoc = $assoc + ["as8" => "Francisco", "as9" => "Maupimo"];
+
+var_dump(
+    $index,
+    $assoc
+);
+
+lesson_obs("array_shift => remove o primeiro elemento");
+array_shift($index);
+array_shift($assoc);
+
+lesson_obs("array_pop => remove o último elemento");
+array_pop($index);
+array_pop($assoc);
+
+var_dump(
+    $index,
+    $assoc
+);
+
+$index = array_filter($index);
 
 
-lesson_obs("variável variável");
 
-$company = "JAML";
-$$company = "Treinamentos";
-echo "<h3>{$company} {$JAML}</h3>";
+lesson_obs("array_unshift => adiciona um elemento no início");
+array_unshift($index, "");
+array_unshift($assoc, "");
 
-lesson_obs("Referenciar");
+var_dump(
+    $index,
+    $assoc
+);
 
-$calcA = 10;
-$calcB = 20;
+lesson_obs("array_filter => remove elemento vazios");
+$index = array_filter($index);
+$assoc = array_filter($assoc);
 
-//$calcB = $calcA;
-$calcB = &$calcA;
-$calcB = 20;
+var_dump(
+    $index,
+    $assoc
+);
 
 
-var_dump([
-    "a" => $calcA,
-    "b" => $calcB
-]);
+lesson_title($title = "Ordenação", __LINE__);
 
-lesson_title($title = "Tipos boleano", __LINE__);
-$true = true;
-$false = false;
 
-var_dump([
-    $true,
-    $false
-]);
+lesson_obs("array_reverse => Inverte a ordem");
+$index = array_reverse($index);
+$assoc = array_reverse($assoc);
 
-$userAge = 45;
+var_dump(
+    $index,
+    $assoc
+);
 
-$bestAge = ($userAge > 46);
 
-var_dump($bestAge);
+lesson_obs("asort => Ordenar pelo valor");
+asort($index);
+asort($assoc);
 
-lesson_obs("valores nulos");
+var_dump(
+    $index,
+    $assoc
+);
 
-$a = 0;
-$b = 0.0;
-$c = "";
-$d = [];
-$e = null;
+lesson_obs("ksort => Ordenar pelo key");
+ksort($index);
+ksort($assoc);
 
-var_dump([$a, $b, $c, $d, $e]);
+var_dump(
+    $index,
+    $assoc
+);
 
-if($a || $b || $c || $d || $e) {
-    var_dump(true);
-} else {
-    var_dump(false);
+lesson_obs("ksort => Ordenar pelo key iverte a ordem");
+krsort($index);
+krsort($assoc);
+
+var_dump(
+    $index,
+    $assoc
+);
+
+/*
+lesson_obs("sort => Ordenar e reinicia o array");
+sort($index);
+sort($assoc);
+
+var_dump(
+    $index,
+    $assoc
+);
+
+lesson_obs("rsort => Ordenar, inverte e reinicia o array");
+rsort($index);
+rsort($assoc);
+
+var_dump(
+    $index,
+    $assoc
+);
+*/
+
+
+lesson_title($title = "Verificação", __LINE__);
+
+
+var_dump(
+    [
+        array_keys($assoc),
+        array_values($assoc)
+    ]
+);
+
+$value = "Marilene1";
+
+if(in_array($value, $assoc)) {    
+    echo "<p>" . "Você achou o {$value}" . "</p>";
+}
+else {
+    echo "<p>" . "Você não achou o {$value}" . "</p>";
 }
 
-lesson_title($title = "Tipo callback", __LINE__);
-$code = "<article><h1>Um call user function</h1></article>";
+$arrayToString = implode(', ', $assoc);
 
-lesson_obs('call_user_func(strip_tags, string_html) - Remove tags html');
-
-$codeClear = call_user_func("strip_tags", $code);
-var_dump($code, $codeClear);
-
-lesson_obs("Funções Anonimas");
-
-$codeMore = function($code) {
-    var_dump($code);
-};
-
-$codeMore('#Boracodar!');
+var_dump(
+    $assoc,
+    $arrayToString
+);
 
 
+var_dump(explode(', ', $arrayToString));
 
-lesson_title($title = "Outros tipos", __LINE__);
+lesson_title($title = "Exemplo prático", __LINE__);
 
-lesson_obs("String");
-$string = "Ola mundo";
-var_dump($string);
+$profile = [
+    "name"      => "Augusto Monteiro",
+    "age"    => 43,
+    "email"     => "jamonteirolima@gmail.com"
+];
 
-lesson_obs("Array");
-$array1 = array('info1', 'info2');
-$array2 = ['info1', 'info2'];
-var_dump([$array1, $array2]);
+var_dump($profile);
 
-lesson_obs("Object");
-$object = new stdClass;
-$object->name = "Augusto";
-$object->sobreNome = "Monteiro";
-var_dump($object);
+$template = <<<TPL
+<article>
+    <h1>{{name}}</h1>
+    <h2>{{email}}</h2>
+    <strong>{{age}}</strong>
+</article>
+TPL;
 
-lesson_obs("Null");
-$null = null;
-var_dump($null);
+echo $template;
 
-lesson_obs("Int");
-$int = 20;
-var_dump($int);
+echo str_replace(array_keys($profile), array_values($profile), $template);
 
+$replace =  "{{" . implode("}}&{{", array_keys($profile)) . "}}";
 
-lesson_obs("Float");
-$float = 21.55555;
-var_dump($float);
+echo str_replace(explode("&", $replace), array_values($profile), $template);
 
-
+/*
+echo "<p>" . COURSE . "</p>";
+lesson_title($title = "include include_ondce", __LINE__);
+heder_lesson("Requisição de arquivos");
 lesson_obs("bolean");
-$bolean_true = true;
-$bolean_false = false;
-var_dump($bolean_true, $bolean_false);
-
-
-
-require "../../shared/footer.php";
+*/
+require __DIR__ .  "/../footer.php";

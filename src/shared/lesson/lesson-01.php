@@ -1,90 +1,90 @@
 <?php
 
-require "../../shared/header.php";
+require __DIR__ . "/../header.php";
 
-heder_lesson("Comandos de saída");
+heder_lesson("Manipulando Tratamentos - Funcões para String");
 
-lesson_title($title = "echo", __LINE__);
+lesson_title($title = "string e multibytes", __LINE__);
 
-echo "<h3>Olá mundo!<span class='tag'>Bora coda!</span></h3>";
+$string = "O último show do Albert Ammons foi incrível";
 
-$hello = "Olá mundo";
-$code = "<span class='tag'>Bora coda!</span>";
-
-echo "<p>$hello</p>";
-
-echo '<p>Hello<span class="tag">\'\' Aspas simples o php não interpreta o código</span></p>';
-
-$day = "dia";
-
-echo "<p>Faltam 2 {$day}s para o evendo<span class='tag'>{} Exemplo de variável protegida</span></p>";
-
-echo "<h3>{$hello}</h3>";
-echo "<h4>{$hello} {$code}</h4>";
-
-echo '<h3>' . $hello . " " .  $code . '</h3>';
-?>
-<h4><?=$hello?> <?=$code?></h4>
-
-<?php
-
-lesson_title($title = "print", __LINE__);
-
-print $hello;
-print $code;
-
-print "<h3>{$hello} {$code}</h3>";
-
-lesson_title($title = "print_r", __LINE__);
-lesson_obs("Imprime array");
-
-$array = array(
-    "company"   => "JAML",
-    "couser"    => "FSPHP",
-    "class"     => "Comandos de Saída"
-);
-
-echo "<pre>" , print_r($array) , "</pre>";
-echo "<pre>" , print_r($array, 1) , "</pre>";
+var_dump([
+    "string" => $string,
+    "strlen" => strlen($string),
+    "mb_strlen" => mb_strlen($string),
+    "substr" => substr($string, "9"),
+    "mb_substr" => mb_substr($string, "9"),
+    "strtoupper" => strtoupper($string),
+    "mb_strtoupper" => mb_strtoupper($string),
+]);
 
 
-lesson_title($title = "printf", __LINE__);
+lesson_title($title = "conversão de caixa", __LINE__);
 
-lesson_obs("Dar saida em uma variável formatada");
+$mbString = $string;
 
-$article = "<article><h1>%s</h1><p>%s</p></article>";
+var_dump([
+    "string" => $mbString,
+    "mb_strtoupper" => mb_strtoupper($mbString),
+    "mb_strtolower" => mb_strtolower($mbString),
+    "mb_convert_case UPPER" => mb_convert_case($mbString, MB_CASE_UPPER),
+    "mb_convert_case LOWER" => mb_convert_case($mbString, MB_CASE_LOWER),
+    "mb_convert_case TITLE" => mb_convert_case($mbString, MB_CASE_TITLE),
+    "mb_convert_case UPPER SIMPLE" => mb_convert_case($mbString, MB_CASE_UPPER_SIMPLE),
+]);
 
-$title = "{$hello} {$code}";
-$subtitle = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, dolorem!";
-printf($article, $title, $subtitle);
+lesson_title($title = "substituição", __LINE__);
 
-lesson_title($title = "vprintf", __LINE__);
+$mbReplace = $mbString . ". Fui, iria novamente, e foi épico";
 
-lesson_obs("Dar saida em uma variável formatada com array");
-
-
-
-$title = "{$hello} {$code}";
-$subtitle = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, dolorem!";
-
-$info_array = array(
-    "title" => $title,
-    "subtitle" => $subtitle
-);
-    
-vprintf($article, $info_array);
+var_dump([
+   "mbReplace"  => $mbReplace,
+   "mb_strlen"  => mb_strlen($mbReplace),
+   "mb_strpos"  => mb_strpos($mbReplace, ', '),
+   "mb_strrpos"  => mb_strrpos($mbReplace, ', '),
+   "mb_substr"  => mb_substr($mbReplace, 50, 14),
+   "mb_strstr"  => mb_strstr($mbReplace, ', ', true),
+   "mb_strrchr"  => mb_strrchr($mbReplace, ', ', true),
+]);
 
 
-lesson_title($title = "var_dump", __LINE__);
+$mbStrReplace = $string;
 
-lesson_obs("Debugar código");
+echo "<p>" . $mbStrReplace . "</p>";
+echo "<p>" . str_replace('show', '<b>SHOW</b>', $mbStrReplace) . "</p>";
+echo "<p>" . str_replace(["show", "foi"], ['<b>SHOW</b>', '<b>FOI</b>'], $mbStrReplace) . "</p>";
 
-$data = array(
-    "nome" => "Augusto",
-    "sobre_nome" => "Monteiro",
+$article = <<<BOOGIE
+    <article>
+    <h3>name</h3>
+    <h2>email</h2>
+    </article>
+BOOGIE;
+
+$article_data = [
+    "name"  => "Augusto Monteiro",
     "email" => "jamonteirolima@gmail.com"
-);
+];
 
-var_dump($data);
+echo str_replace(array_keys($article_data), array_values($article_data), $article);
 
-require "../../shared/footer.php";
+lesson_title($title = "parse string", __LINE__);
+
+$endPoint = "name=Augusto&email=jamonteirolima@gmail.com";
+
+mb_parse_str($endPoint, $parseEndPoint);
+
+var_dump([
+    "endPoint" => $endPoint,
+    "mb_parse_str" => $parseEndPoint,
+    "object" => (object) $parseEndPoint
+]);
+
+/*
+echo "<p>" . COURSE . "</p>";
+lesson_title($title = "include include_ondce", __LINE__);
+heder_lesson("Requisição de arquivos");
+lesson_obs("bolean");
+lesson_tag('Augusto');
+*/
+require __DIR__ .  "/../footer.php";
