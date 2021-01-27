@@ -5,6 +5,9 @@
 header("Content-Type: text/html; charset=utf-8");
 
 date_default_timezone_set("America/Sao_Paulo");
+
+opcache_reset();
+opcache_invalidate(__FILE__, true);
 /*
 ini_set("display_errors", 1);
 ini_set("error_reporting", E_ALL);
@@ -16,8 +19,8 @@ set_error_handler("phpError");
 $server_host = $_SERVER['HTTP_HOST'];
 
 function phpError($error, $message, $file, $line) {
-    $color = ($error == E_USER_ERROR ? "red" : "yellow");
-    echo "<div class='message message-warning'>[ Linha {$line} ] <strong>{$message}</strong><small>{$file}</small></div>";
+    // $color = ($error == E_USER_ERROR ? "red" : "yellow");
+    echo "<div class='message message-warning'>[ Linha {$line} ] <strong>{$message}</strong><br /><small>{$file}</small></div>";
 }
 
 function heder_lesson($lesson = "lesson") {
@@ -35,3 +38,7 @@ function lesson_obs($title = "tag") {
 function lesson_tag($title = "tag") {
     echo "<span class='spantag'>{$title}</span>" . PHP_EOL;
 }
+
+function lesson_message($message = "Atenção", $type = "warning") {
+    echo "<div class='message message-" . $type . "'>" . $message . "</div>";
+} 

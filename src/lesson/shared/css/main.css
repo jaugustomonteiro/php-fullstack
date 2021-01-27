@@ -80,12 +80,13 @@ header {
     color: var(--red);    
 }
 
-.xdebug-var-dump, p, h1, h2, h3, h4, pre, article {
+.xdebug-var-dump, p, h1, h2, h3, h4, pre, article, form {
     background-color: #ccc;
     margin: 1.5rem 0;
     padding: 1.5rem;
     border-radius: 8px 0 0 8px;
     border-left: 8px solid #000;
+    overflow: auto;
     
 }
 
@@ -120,10 +121,19 @@ header {
     font-size: .8rem;   
 }
 
+.message-success {
+    border: 2px solid var(--success);
+    color: var(--success);    
+}
+
 .message-warning {
     border: 2px solid var(--yellow);
-    color: var(--yellow);
-    
+    color: var(--yellow);    
+}
+
+.message-danger {
+    border: 2px solid var(--danger);
+    color: var(--danger);    
 }
 
 .message-warning strong {
@@ -141,5 +151,53 @@ header {
     display: inline-block;
     margin-bottom: .5rem;
 }
+
+
+form input {
+    width: 48%;
+    padding: 16px;
+    margin-bottom: 16px; 
+    font-size: 24px;  
+    border-radius: 8px; 
+    border: 1px solid #ccc;
+}
+
+.form button, .form-upload button {
+    border-radius: 8px;
+    width: 100%;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+}
+
+.form p, .form-upload p {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.form div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form p a, .form-upload p a {
+    font-weight: bold;
+    text-decoration: none;
+    font-weight: 24px;
+}
+
+.form-upload input {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 16px; 
+    font-size: 24px;  
+    border-radius: 8px; 
+    border: 1px solid #666;
+}
+
+
 
 
