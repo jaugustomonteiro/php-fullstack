@@ -40,5 +40,5 @@ function lesson_tag($title = "tag") {
 }
 
 function lesson_message($message = "Atenção", $type = "warning") {
-    echo "<div class='message message-" . $type . "'>" . $message . "</div>";
+    echo "<div class='message message-" . $type . "'><i class='bx bx-info-circle' style='margin-right: 5px; font-size: 1.5rem'></i>" . $message . "</div>";
 } 
