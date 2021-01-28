@@ -1,0 +1,24 @@
+{
+    "name": "augusto/jamlphp",
+    "description": "Full Stack PHP Developer",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Augusto Monteiro",
+            "email": "cursos@upinside.com.br",
+            "role": "Developer"
+        }
+    ],
+    "config": {
+        "vendor-lib": "vendor"
+    },
+    "autoload": {
+        "psr-4": {
+            "Source\\": "source/"
+        }
+    },
+    "require": {
+        "phpmailer/phpmailer": "^6.2",
+        "squizlabs/php_codesniffer": "*"
+    }
+}
