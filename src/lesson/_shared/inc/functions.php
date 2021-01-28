@@ -6,6 +6,8 @@ header("Content-Type: text/html; charset=utf-8");
 
 date_default_timezone_set("America/Sao_Paulo");
 
+set_error_handler("phpError");
+
 opcache_reset();
 opcache_invalidate(__FILE__, true);
 /*
@@ -14,7 +16,7 @@ ini_set("error_reporting", E_ALL);
 ini_set('xdebug.overload_var_dump', 1);
 */
 
-set_error_handler("phpError");
+
 
 $server_host = $_SERVER['HTTP_HOST'];
 
