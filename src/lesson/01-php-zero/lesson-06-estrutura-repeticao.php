@@ -1,8 +1,8 @@
 <?php
 
-require "../../shared/header.php";
+require __DIR__ . "/../_shared/header.php";
 
-heder_lesson("Estrutura de repetição");
+heder_lesson("Iniciando do Zero com PHP <br> Estrutura de repetição");
 
 /*
 lesson_obs("bolean");
@@ -86,4 +86,4 @@ foreach ($array as $key => $value) {
 
 var_dump($foreachKeyValue);
 
-require "../../shared/footer.php";
+require __DIR__ . "/../_shared/footer.php";

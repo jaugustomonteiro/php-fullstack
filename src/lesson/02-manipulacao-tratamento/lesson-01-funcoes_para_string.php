@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__ . "/shared//header.php";
+require __DIR__ . "/../_shared/header.php";
 
 heder_lesson("Manipulação e Tratamentos <br> Funcões para String");
 
@@ -87,4 +87,4 @@ heder_lesson("Requisição de arquivos");
 lesson_obs("bolean");
 lesson_tag('Augusto');
 */
-require __DIR__ .  "/shared/footer.php";
+require __DIR__ . "/../_shared/footer.php";

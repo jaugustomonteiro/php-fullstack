@@ -1,8 +1,8 @@
 <?php
 
-require "../../shared/header.php";
+require __DIR__ . "/../_shared/header.php";
 
-heder_lesson("Operadores na prática");
+heder_lesson("Iniciando do Zero com PHP <br> Operadores na prática");
 
 /*
 lesson_obs("bolean");
@@ -63,7 +63,7 @@ lesson_obs("!== testa se valores e tipos são diferentes");
 var_dump($related);
 
 
-lesson_title($title = "Operadores lógicos", __LINE__);
+lesson_title($title = "Iniciando do Zero com PHP <br> Operadores lógicos", __LINE__);
 
 $logicA = true;
 $logicB = false;
@@ -96,4 +96,4 @@ var_dump([
 
 
 
-require "../../shared/footer.php";
+require __DIR__ . "/../_shared/footer.php";

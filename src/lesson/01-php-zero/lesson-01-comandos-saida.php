@@ -1,8 +1,8 @@
 <?php
 
-require "../../shared/header.php";
+require __DIR__ . "/../_shared/header.php";
 
-heder_lesson("Comandos de saída");
+heder_lesson("Iniciando do Zero com PHP <br> Comandos de saída");
 
 lesson_title($title = "echo", __LINE__);
 
@@ -87,4 +87,4 @@ $data = array(
 
 var_dump($data);
 
-require "../../shared/footer.php";
+require __DIR__ . "/../_shared/footer.php";

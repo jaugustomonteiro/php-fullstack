@@ -1,8 +1,8 @@
 <?php
 
-require "../../shared/header.php";
+require __DIR__ . "/../_shared/header.php";
 
-heder_lesson("Arrays, vetores e pilhas");
+heder_lesson("Iniciando do Zero com PHP <br> Arrays, vetores e pilhas");
 
 /*
 lesson_obs("bolean");
@@ -145,4 +145,4 @@ $article = "<article><h1>%s</h1><p>%s</p><p>%s</p><p>%s</p><p>%s</p></article>";
 
 vprintf($article, $arrayAcess['filhos']);
 
-require "../../shared/footer.php";
+require __DIR__ . "/../_shared/footer.php";

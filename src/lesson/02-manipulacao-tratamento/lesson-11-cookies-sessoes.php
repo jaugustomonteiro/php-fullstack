@@ -2,7 +2,7 @@
 
 // session_start();
 
-require __DIR__ . "/shared/header.php";
+require __DIR__ . "/../_shared/footer.php";
 
 heder_lesson("Manipulação e Tratamentos <br> Cookies e sessoes");
 
@@ -95,4 +95,4 @@ heder_lesson("Requisição de arquivos");
 lesson_obs("bolean");
 lesson_message("Preencha todos os campos!", "warning");
 */
-require __DIR__ .  "/shared/footer.php";
+require __DIR__ . "/../_shared/footer.php";

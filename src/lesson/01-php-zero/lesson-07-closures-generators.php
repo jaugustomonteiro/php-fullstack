@@ -1,8 +1,8 @@
 <?php
 
-require "../../shared/header.php";
+require __DIR__ . "/../_shared/header.php";
 
-heder_lesson("Closures e Generators");
+heder_lesson("Iniciando do Zero com PHP <br> Closures e Generators");
 
 /*
 lesson_obs("bolean");
@@ -76,4 +76,4 @@ foreach (generatorDate($iterator) as $date) {
 echo "<div>";
 
 
-require "../../shared/footer.php";
+require __DIR__ . "/../_shared/footer.php";

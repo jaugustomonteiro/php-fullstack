@@ -1,8 +1,8 @@
 <?php
 
-require "../../shared/header.php";
+require __DIR__ . "/../_shared/header.php";
 
-heder_lesson("Constantes e constates mágicas");
+heder_lesson("Iniciando do Zero com PHP <br> Constantes e constates mágicas");
 
 lesson_title("constantes", __LINE__);
 
@@ -78,7 +78,7 @@ lesson_title($title = "include include_ondce", __LINE__);
 heder_lesson("Requisição de arquivos");
 lesson_obs("bolean");
 */
-require "../../shared/footer.php";
+require __DIR__ . "/../_shared/footer.php";
 
 var_dump(new Source\MyClass());
 var_dump(Source\MyClass::class);

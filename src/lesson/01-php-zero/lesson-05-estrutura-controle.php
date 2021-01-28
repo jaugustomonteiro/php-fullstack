@@ -1,6 +1,6 @@
 <?php
 
-require "../../shared/header.php";
+require __DIR__ . "/../_shared/header.php";
 
 heder_lesson("Estruturas de controle");
 
@@ -102,4 +102,4 @@ switch($payment) {
 
 
 
-require "../../shared/footer.php";
+require __DIR__ . "/../_shared/footer.php";
