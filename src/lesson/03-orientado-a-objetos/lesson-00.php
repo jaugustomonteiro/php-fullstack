@@ -4,7 +4,7 @@ require __DIR__ . "/../_shared/header.php";
 
 heder_lesson("Orientado a objeto <br> Subtítulo");
 
-lesson_title($title = "Lesson", __LINE__);
+lesson_title("Lesson", __LINE__);
 
 /*
 echo "<p>" . COURSE . "</p>";
