@@ -45,22 +45,22 @@ header {
     flex-direction: column;    
     color: #101010;
     padding: 1rem 0;
-    margin-bottom: 1rem;
 }
 
 .lesson-header {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 
 .container {
     margin: 0 auto;
     max-width: 71.25rem;
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
 .header-lesson {
-    font-size: 2rem;
+    font-size: 1.7rem;
     text-align: center;
     display: block;
     margin-bottom: 1rem;
@@ -73,7 +73,7 @@ header {
     display: block;  
     border-radius: 8px;
     margin: 1.5rem 0;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .lesson-title span {

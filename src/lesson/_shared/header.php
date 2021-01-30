@@ -15,7 +15,7 @@
 <body>
     
     <header class="lesson-header">
-        <img src="http://<?=$server_host?>/src/lesson/_shared/img/php-vscode-logo.png" alt="logo" style="display: block; height: 5rem; margin-bottom: 1.5rem">
+        <img src="http://<?=$server_host?>/src/lesson/_shared/img/php-vscode-logo.png" alt="logo" style="display: block; height: 4rem; margin-bottom: 1.5rem">
         <?=$site_title?>
     </header>
     <div class="container">
