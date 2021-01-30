@@ -2,7 +2,7 @@ version: '3'
 
 services:
   
-  php57:
+  php74:
     build: .
     image: 
       'jaml:php74'

@@ -2,6 +2,8 @@
 
 require __DIR__ . "/../_shared/header.php";
 
+require __DIR__ . "/source/autoload.php";
+
 heder_lesson("Orientado a objeto <br> Subtítulo");
 
 lesson_title("Lesson", __LINE__);
