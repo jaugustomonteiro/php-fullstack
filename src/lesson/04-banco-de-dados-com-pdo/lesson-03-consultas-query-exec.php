@@ -4,7 +4,7 @@ require __DIR__ . "/../_shared/header.php";
 
 require __DIR__ . "/source/autoload.php";
 
-heder_lesson("04 - Banco de Dados com PDO <br> Consultas com Query e Exec");
+heder_lesson("Banco de Dados com PDO <br> Consultas com Query e Exec");
 
 use Source\Classes03\Database\Connect;
 
