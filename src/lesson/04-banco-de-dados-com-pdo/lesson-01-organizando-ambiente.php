@@ -4,9 +4,10 @@ require __DIR__ . "/../_shared/header.php";
 
 require __DIR__ . "/source/autoload.php";
 
-heder_lesson("Orientado a objeto <br> Subtítulo");
+heder_lesson("04 - Banco de Dados com PDO <br> Organizando seu ambiente");
 
-lesson_title("Lesson", __LINE__);
+lesson_title("Organização", __LINE__);
+lesson_title("Configuração", __LINE__);
 
 /*
 echo "<p>" . COURSE . "</p>";
