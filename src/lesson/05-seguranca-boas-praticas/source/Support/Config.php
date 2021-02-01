@@ -30,4 +30,28 @@ define("CONF_DATE_APP", "Y-m-d H:i:s");
 
 define("CONF_SESSION_PATH", __DIR__ . "/../../storage/sessions/");
 
+
+/**
+ * MESSAGE
+ */
+
+define("CONF_MESSAGE_CLASS", "message");
+define("CONF_MESSAGE_INFO", "info");
+define("CONF_MESSAGE_SUCESS", "success");
+define("CONF_MESSAGE_WARNING", "warning");
+define("CONF_MESSAGE_ERROR", "danger");
+
+
+/**
+ * ICONS
+ * <i class='bx bx-error-circle'></i>
+ * <i class='bx bx-x-circle' ></i>
+ */
+
+define("CONF_ICON_INFO", "bx-error-circle");
+define("CONF_ICON_SUCCESS", "bx-check-circle");
+define("CONF_ICON_WARNING", "bx-error-circle");
+define("CONF_ICON_ERROR", "bx-x-circle");
+
+
  //define("CONF_", "");

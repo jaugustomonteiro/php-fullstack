@@ -136,37 +136,6 @@ header {
     margin-bottom: 1rem;
 }
 
-.message {
-    padding: 1rem 0.4rem;
-    display: flex;
-    align-items: center;
-    border-radius: 4px;
-    margin-bottom: 1rem;   
-    font-size: .8rem;   
-}
-
-.message-success {
-    border: 2px solid var(--success);
-    color: var(--success);    
-}
-
-.message-warning {
-    border: 2px solid var(--yellow);
-    color: var(--yellow);    
-}
-
-.message-danger {
-    border: 2px solid var(--danger);
-    color: var(--danger);    
-}
-
-.message-warning strong {
-    margin: 0 5px;
-    display: block;
-    color: var(--orange);
-    font-style: italic;
-}
-
 .spantag {
     background: #666;
     color: #fff;
@@ -222,6 +191,45 @@ form input {
     border: 1px solid #666;
 }
 
+
+
+/*MESSAGES*/
+
+.message {
+    padding: 1rem 0.4rem;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    margin-bottom: 1rem;   
+    font-size: .8rem;   
+}
+
+.message-success {
+    border: 2px solid var(--success);
+    color: var(--success);    
+}
+
+.message-danger {
+    border: 2px solid var(--danger);
+    color: var(--danger);    
+}
+
+.message-info {
+    border: 2px solid var(--info);
+    color: var(--info);    
+}
+
+.message-warning {
+    border: 2px solid var(--yellow);
+    color: var(--yellow);    
+}
+
+.message-warning strong {
+    margin: 0 5px;
+    display: block;
+    color: var(--orange);
+    font-style: italic;
+}
 
 
 
