@@ -13,7 +13,7 @@
 /**
  * URLS
  */
- define("CONF_URL_BASE", "http://17.0.0.2:8080/");
+ define("CONF_URL_BASE", "http://17.0.0.2:8080/src/lesson/05-seguranca-boas-praticas/lesson-05-camada-manipulacao-03.php");
  define("CONF_URL_ADMIN", CONF_URL_BASE . "/admin");
  define("CONF_URL_ERROR", "/404");
 
@@ -30,6 +30,12 @@ define("CONF_DATE_APP", "Y-m-d H:i:s");
 
 define("CONF_SESSION_PATH", __DIR__ . "/../../storage/sessions/");
 
+
+/**
+ * PASSWORD
+ */
+define("CONF_PASSWORD_MIN_LEN", 4);
+define("CONF_PASSWORD_MAX_LEN", 10);
 
 /**
  * MESSAGE
