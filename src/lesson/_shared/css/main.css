@@ -147,7 +147,7 @@ header {
 
 
 form input {
-    width: 48%;
+    width: 100%;
     padding: 16px;
     margin-bottom: 16px; 
     font-size: 24px;  
@@ -173,6 +173,7 @@ form input {
 
 .form div {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 

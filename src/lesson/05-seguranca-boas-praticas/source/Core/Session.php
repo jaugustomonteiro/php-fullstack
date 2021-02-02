@@ -20,7 +20,7 @@ class Session {
      * @return void
      */
     public function __get($name) {
-        if(empty($_SESSION[$name])) {
+        if(!empty($_SESSION[$name])) {
             return $_SESSION[$name];
         }
         return null;       
@@ -95,5 +95,13 @@ class Session {
         }
 
         return null;
+    }
+
+
+    /**
+     * @return void
+     */
+    public function csrf(): void {
+        $_SESSION['csrf_token'] = base64_encode(random_bytes(20));
     }
 }

@@ -52,8 +52,6 @@ define("CONF_MESSAGE_ERROR", "danger");
 
 /**
  * ICONS
- * <i class='bx bx-error-circle'></i>
- * <i class='bx bx-x-circle' ></i>
  */
 
 define("CONF_ICON_INFO", "bx-error-circle");
