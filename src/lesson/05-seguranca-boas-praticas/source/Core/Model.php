@@ -13,9 +13,16 @@ abstract class Model {
     /** @var \PDOException|null */
     protected $fail;
 
-    /** @var string|null */
+    /** @var Message|null */
     protected $message;
 
+    /**
+     * Model Constructor
+     */
+    public function __construct() {
+        $this->message = new Message();
+    }
+    
     /**
      * @param [type] $name
      * @param [type] $value
@@ -59,9 +66,9 @@ abstract class Model {
     }
 
     /**
-     * @return null|string
-     */ 
-    public function message(): ?string {
+     * @return Message|null
+     */
+    public function message(): ?Message {
         return $this->message;
     }
 
@@ -183,6 +190,19 @@ abstract class Model {
         }
 
         return $filter;
+    }
+
+    /**
+     * @return boolean
+     */
+    protected function required(): bool {
+        $data = (array)$this->data();
+        foreach (static::$required as $filed) {
+            if(empty($data[$filed])) {
+                return false;
+            }
+        }
+        return true;
     }
 
 }
