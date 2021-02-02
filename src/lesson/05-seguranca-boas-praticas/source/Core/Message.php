@@ -66,7 +66,7 @@ class Message {
      * @return string
      */
     public function render(): string {
-        return "<div class='" . CONF_MESSAGE_CLASS. " message-" . $this->getType() . "'><i class='bx {$this->getIcon()}' style='margin-right: 5px; font-size: 1.5rem'></i>" . $this->getText() . "</div>";
+        return "<message class='" . CONF_MESSAGE_CLASS. " message-" . $this->getType() . "'><i class='bx {$this->getIcon()}' style='margin-right: 5px; font-size: 1.5rem'></i>" . $this->getText() . "</message>";
     }
 
     /**

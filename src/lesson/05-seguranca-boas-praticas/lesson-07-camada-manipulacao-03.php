@@ -25,7 +25,7 @@ else {
 
 $password = "1234567890";
 
-if(!is_password($password)) {
+if(!is_passwd($password)) {
     echo $message->error("O Passowrd " . $password .  " é inválido");
 }
 else {

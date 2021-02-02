@@ -23,7 +23,11 @@ function is_email(string $email): bool {
  * @param string $password
  * @return boolean
  */
-function is_password(string $password): bool {
+function is_passwd(string $password): bool {
+    
+    if(password_get_info($password)["algo"]) {
+        return true;
+    }
     return (mb_strlen($password) >= CONF_PASSWORD_MIN_LEN && mb_strlen($password) <= CONF_PASSWORD_MAX_LEN ? true : false);
 }
 
