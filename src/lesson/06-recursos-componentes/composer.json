@@ -1,0 +1,27 @@
+{
+    "name": "jaml/phpfullstack",
+    "description": "Formação Full Stack PHP Developer",
+    "minimum-stability": "stable",
+    "authors": [
+      {
+        "name": "Augusto Monteiro",
+        "email": "jamonteirolima@gmail.com",
+        "role": "Developer"
+      }
+    ],
+    "config": {
+      "vendor-dir": "vendor"
+    },
+    "autoload": {
+      "psr-4": {
+        "Source\\": "source/"
+      },
+      "files": [
+        "source/Support/Config.php",
+        "source/Support/Helpers.php"
+      ]
+    },
+    "require": {
+      
+    }
+  }
