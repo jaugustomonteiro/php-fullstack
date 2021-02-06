@@ -1,31 +1,26 @@
-version: '3'
+version: "3"
 
 services:
-  
-  php74:
+  phpfullstack2:
     build: .
-    image: 
-      'jaml:php74'
-    container_name: 
-      php74
-    ports: 
-      - '8080:80'
+    image: "jaml:php74"
+    container_name: phpfullstack2
+    ports:
+      - "8080:80"
     volumes:
-      - /files/php-projects/upinsider/phpfullstack:/var/www/html
+      - /files/php-projects/upinsider/phpfullstack2:/var/www/html
     networks:
-     - jaml-networks
+      - jaml-phpfullstack
 
   mysql57:
-    image: 
-      mysql:5.7
-    container_name: 
-      mysql57
+    image: mysql:5.7
+    container_name: mysql57
     ports:
-      - '3306:3306'
+      - "3306:3306"
     environment:
-      - MYSQL_ROOT_PASSWORD=root   
+      - MYSQL_ROOT_PASSWORD=root
     networks:
-     - jaml-networks
+      - jaml-phpfullstack
 
 networks:
-    jaml-networks:
+  jaml-phpfullstack:

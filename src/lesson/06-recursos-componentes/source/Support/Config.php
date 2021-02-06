@@ -60,4 +60,27 @@ define("CONF_ICON_WARNING", "bx-error-circle");
 define("CONF_ICON_ERROR", "bx-x-circle");
 
 
+/**
+ * E-MAIL
+ */
+
+ define("CONF_MAIL_HOST", "smtp.sendgrid.net");
+ define("CONF_MAIL_PORT", "465");
+ define("CONF_MAIL_USER", "apikey");
+ define("CONF_MAIL_PASS", "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");
+ define("CONF_MAIL_SENDER", [
+     "name"     => "Augusto Monteiro",
+     "address"  => "jamonteirolima@gmail.com"
+ ]);
+
+ define("CONF_MAIL_OPTION_LANG", "pt");
+ define("CONF_MAIL_OPTION_HTML", true);
+ define("CONF_MAIL_OPTION_AUTH", true);
+ define("CONF_MAIL_OPTION_SECURE", "ssl");
+ define("CONF_MAIL_OPTION_CHARSET", "utf-8");
+
+
+
+
+
  //define("CONF_", "");

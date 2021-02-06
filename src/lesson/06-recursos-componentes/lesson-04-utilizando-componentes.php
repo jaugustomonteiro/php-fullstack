@@ -9,6 +9,7 @@ heder_lesson("Recursos e components <br> Utilizando componentes");
 lesson_title("Instance", __LINE__);
 
 use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception as PHPMailerException;
 
 $phpMailer = new PHPMailer();
@@ -23,8 +24,9 @@ try {
     $mail = new PHPMailer(true);
 
     /* CONFIG */
+    //$mail->SMTPDebug = SMTP::DEBUG_SERVER;  
     $mail->isSMTP();
-    $mail->setLanguage("br");
+    $mail->setLanguage("en");
     $mail->isHTML(true);
     $mail->SMTPAuth = true;
     $mail->SMTPSecure = "ssl";
@@ -33,16 +35,16 @@ try {
     /* AUTH */
     $mail->Host = "smtp.sendgrid.net";
     $mail->Username = "apikey";
-    $mail->Password = "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";
+    $mail->Password = "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";
     $mail->Port = "465";
 
     /* MAIL */
-    $mail->setFrom("", "Brawziin Monteiro");
+    $mail->setFrom('jamonteirolima@gmail.com', 'Augusto Monteiro');
     $mail->Subject = "Este é meu envio via componente no JAML";
-    $mail->msgHTML("<h1>Olá augusto</h1><p>Aqui é o Brawziin Monteiro</p>");
+    $mail->msgHTML("<h1>Olá Matraca</h1><p>Aqui é o Augusto Monteiro</p>");
 
     /* SEND */
-    $mail->addAddress("jamonteiriolima@gmail.com", "Augusto Monteiro");
+    $mail->addAddress("matraca.suporte@gmail.com", "Matraca");
     $send = $mail->send();
 
     var_dump($send);
