@@ -28,7 +28,7 @@ define("CONF_DATE_APP", "Y-m-d H:i:s");
  * SESSION
  */
 
-define("CONF_SESSION_PATH", __DIR__ . "/../../storage/sessions/");
+define("CONF_SESSION_PATH", __DIR__ . "/../../storage/sessions");
 
 
 /**
@@ -61,13 +61,21 @@ define("CONF_ICON_ERROR", "bx-x-circle");
 
 
 /**
+ * VIEW
+ */
+
+ define("CONF_VIEW_PATH", "assets/views");
+ define("CONF_VIEW_EXT", "php");
+
+
+/**
  * E-MAIL
  */
 
  define("CONF_MAIL_HOST", "smtp.sendgrid.net");
  define("CONF_MAIL_PORT", "465");
- define("CONF_MAIL_USER", "apikey");
- define("CONF_MAIL_PASS", "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");
+ define("CONF_MAIL_USER", "****");
+ define("CONF_MAIL_PASS", "*************************************************************************************");
  define("CONF_MAIL_SENDER", [
      "name"     => "Augusto Monteiro",
      "address"  => "jamonteirolima@gmail.com"
