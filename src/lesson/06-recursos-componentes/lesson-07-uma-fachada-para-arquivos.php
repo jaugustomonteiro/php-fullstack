@@ -80,7 +80,7 @@ lesson_title("Remove", __LINE__);
 
 echo __DIR__ . "/storage/uploads/medias/2021/02/um-video.mp4";
 
-$upload->remove(__DIR__ . "/storage/uploads/medias/2021/02/nome-do-arquivo.mp4");
+$upload->remove(__DIR__ . "/storage/uploads/medias/2021/02/image1-1612734184.png");
 
 /****************************************************************
  *  echo "<p>" . COURSE . "</p>";                               *

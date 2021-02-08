@@ -11,6 +11,27 @@
 
 
 /**
+ * SITE
+ */
+define("CONF_SITE_NAME", "JAML");
+define("CONF_SITE_LANG", "pt_BR");
+define("CONF_SITE_DOMAIN", "jaml.com.br");
+
+
+/**
+ * SOCIAL
+ */
+define("CONF_SOCIAL_TWITTER_CREATOR", "@jaugustomlima");
+define("CONF_SOCIAL_TWITTER_PUBLISHER", "jaml.com.br");
+define("CONF_SOCIAL_FACEBOOK_APP", "augusto.mmonteiro");
+define("CONF_SOCIAL_FACEBOOK_PAGE", "augusto.mmonteiro");
+define("CONF_SOCIAL_FACEBOOK_AUTHOR", "augusto.mmonteiro");
+define("CONF_SOCIAL_GOOGLE_PAGE", "augusto.mmonteiro");
+define("CONF_SOCIAL_GOOGLE_AUTHOR", "augusto.mmonteiro");
+
+
+
+/**
  * URLS
  */
  define("CONF_URL_BASE", "http://17.0.0.2:8080/src/lesson/05-seguranca-boas-praticas/lesson-05-camada-manipulacao-03.php");

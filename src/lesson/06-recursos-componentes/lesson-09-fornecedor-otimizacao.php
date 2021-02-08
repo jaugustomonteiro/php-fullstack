@@ -4,9 +4,9 @@ require __DIR__ . "/../_shared/header.php";
 
 require __DIR__ . "/vendor/autoload.php";
 
-heder_lesson("Recursos e components <br> Titulo");
+heder_lesson("Recursos e components <br> Fornecedor de otimização");
 
-lesson_title("Guide", __LINE__);
+lesson_title("Optimizer", __LINE__);
 
 
 /****************************************************************

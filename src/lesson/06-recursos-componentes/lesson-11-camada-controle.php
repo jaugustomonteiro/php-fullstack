@@ -4,7 +4,7 @@ require __DIR__ . "/../_shared/header.php";
 
 require __DIR__ . "/vendor/autoload.php";
 
-heder_lesson("Recursos e components <br> Titulo");
+heder_lesson("Recursos e components <br> Uma camada de controle");
 
 lesson_title("Guide", __LINE__);
 
