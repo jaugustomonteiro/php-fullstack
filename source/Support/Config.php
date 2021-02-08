@@ -2,10 +2,10 @@
 /**
  * DATABASE
  */
-define("CONF_DB_HOST", "localhost");
+define("CONF_DB_HOST", "mysql57");
 define("CONF_DB_USER", "root");
-define("CONF_DB_PASS", "");
-define("CONF_DB_NAME", "fullstackphp");
+define("CONF_DB_PASS", "root");
+define("CONF_DB_NAME", "phpfullstack");
 
 /**
  * PROJECT URLs
