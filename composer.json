@@ -1,12 +1,11 @@
 {
-  "name": "upinside/fsphp",
-  "description": "Formação Full Stack PHP Developer",
+  "name": "jaml/phpfullstack",
+  "description": "PHP Developer",
   "minimum-stability": "stable",
   "authors": [
     {
-      "name": "Robson V. Leite",
-      "email": "cursos@upinside.com.br",
-      "homepage": "https://www.upinside.com.br",
+      "name": "Augusto Monteiro",
+      "email": "jamonteirolima@gmail.com",
       "role": "Developer"
     }
   ],

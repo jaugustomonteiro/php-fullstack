@@ -8,7 +8,7 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - /files/php-projects/upinsider/phpfullstack2:/var/www/html
+      - /home/augusto/Devops/phpfullstack:/var/www/html
     networks:
       - jaml-phpfullstack
 

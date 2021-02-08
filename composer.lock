@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8791f567b187e9a68d23745cf0d239b8",
+    "content-hash": "5746d8b0478d03d1051afb08cdec5b02",
     "packages": [
         {
             "name": "coffeecode/cropper",
@@ -57,6 +57,10 @@
                 "upload",
                 "webp converter"
             ],
+            "support": {
+                "issues": "https://github.com/robsonvleite/cropper/issues",
+                "source": "https://github.com/robsonvleite/cropper/tree/master"
+            },
             "time": "2020-06-29T18:33:49+00:00"
         },
         {
@@ -106,6 +110,10 @@
                 "twitter card",
                 "upinside"
             ],
+            "support": {
+                "issues": "https://github.com/robsonvleite/optimizer/issues",
+                "source": "https://github.com/robsonvleite/optimizer/tree/master"
+            },
             "time": "2019-03-12T14:37:11+00:00"
         },
         {
@@ -150,6 +158,10 @@
                 "paginator",
                 "upinside"
             ],
+            "support": {
+                "issues": "https://github.com/robsonvleite/paginator/issues",
+                "source": "https://github.com/robsonvleite/paginator/tree/master"
+            },
             "time": "2020-06-29T14:43:29+00:00"
         },
         {
@@ -204,6 +216,10 @@
                 "upinside",
                 "upload"
             ],
+            "support": {
+                "issues": "https://github.com/robsonvleite/uploader/issues",
+                "source": "https://github.com/robsonvleite/uploader/tree/master"
+            },
             "time": "2020-06-23T13:22:03+00:00"
         },
         {
@@ -276,6 +292,10 @@
                 "templating",
                 "views"
             ],
+            "support": {
+                "issues": "https://github.com/thephpleague/plates/issues",
+                "source": "https://github.com/thephpleague/plates/tree/master"
+            },
             "time": "2018-01-31T07:20:23+00:00"
         },
         {
@@ -342,6 +362,10 @@
                 }
             ],
             "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
+            "support": {
+                "issues": "https://github.com/PHPMailer/PHPMailer/issues",
+                "source": "https://github.com/PHPMailer/PHPMailer/tree/v6.2.0"
+            },
             "funding": [
                 {
                     "url": "https://github.com/Synchro",
@@ -403,6 +427,10 @@
                 "mime",
                 "mime type"
             ],
+            "support": {
+                "issues": "https://github.com/rosell-dk/image-mime-type-guesser/issues",
+                "source": "https://github.com/rosell-dk/image-mime-type-guesser/tree/0.3"
+            },
             "time": "2019-03-29T09:33:28+00:00"
         },
         {
@@ -479,6 +507,10 @@
                 "png",
                 "png2webp"
             ],
+            "support": {
+                "issues": "https://github.com/rosell-dk/webp-convert/issues",
+                "source": "https://github.com/rosell-dk/webp-convert/tree/2.3.2"
+            },
             "time": "2020-04-18T14:41:50+00:00"
         }
     ],
@@ -492,5 +524,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.0.0"
 }
