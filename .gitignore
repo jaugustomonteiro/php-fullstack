@@ -1,5 +1,5 @@
-__lessons/*/vendor
+_lessons/*/vendor
 
-__lessons/*/storage
+_lessons/*/storage
 
 vendor
