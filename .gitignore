@@ -1,3 +1,5 @@
-src/lesson/*/vendor
+_lessons/*/vendor
 
-src/lesson/*/storage
+_lessons/*/storage
+
+vendor

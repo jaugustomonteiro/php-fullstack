@@ -6,6 +6,8 @@
     <article>
         <h1><?= "{$user->first_name} {$user->last_name}"; ?></h1>
         <p><?= $user->email; ?> - Registrado em <?= date_fmt($user->created_at); ?></p>
-        <a href="lesson-06-camada-visualizacao.php/editar?id=<?= $user->id; ?>" title="Editar">Editar</a>
+        <a href="<?=$pageInit?>/editar&id=<?= $user->id; ?>" title="Editar">Editar</a>
     </article>
 <?php endforeach; ?>
+
+<?= ($pager ?? null) ?>

@@ -3,7 +3,7 @@
 ]); ?>
 
 <?php $v->start("nav"); ?>
-<a href="lesson-06-camada-visualizacao.php" title="Voltar">Voltar</a>
+<a href="<?=$pageInit;?>" title="Voltar">Voltar</a>
 <?php $v->stop(); ?>
 
 <form class="form" action="" method="post" enctype="multipart/form-data">

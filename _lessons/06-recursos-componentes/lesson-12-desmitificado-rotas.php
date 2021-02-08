@@ -4,9 +4,18 @@ require __DIR__ . "/../_shared/header.php";
 
 require __DIR__ . "/vendor/autoload.php";
 
-heder_lesson("Recursos e components <br> Uma camada de controle");
+heder_lesson("Recursos e components <br> Desmistificando rotas");
 
-lesson_title("Guide", __LINE__);
+use Source\Core\Route;
+
+lesson_title("Routes", __LINE__);
+
+Route::get("/", "UserController:home");
+Route::get("/editar", "UserController:edit");
+
+Route::get("/rotas", function () {
+    var_dump(Route::routes());
+});
 
 
 /****************************************************************
